@@ -1,0 +1,131 @@
+@media only screen and (max-width: 575px) {
+    img.about-me-box-1-image-2 {
+        width: 20%;
+        left: 350px;
+        bottom: -58px;
+    }
+    .main-container-about-me-box-1 {
+        margin-bottom: 100px;
+    }
+    .main-container-about-me-box-2 {
+        width: 85%;
+    }
+    h2.main-heading-about-me-box-2 {
+        font-size: 38px;
+    }
+    .container-about-me-box-1:before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 7px;
+        border: 5px solid #fd562a;
+        left: 30px;
+        top: 190px;
+    }
+    .container-about-me-box-1:after {
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        background: #fd562a;
+        left: 332px;
+        bottom: -90px;
+        border-radius: 4px;
+    }
+    .container-about-me-box-1:after {
+        display: none;
+    }
+    .container-about-me-box-1::before {
+        display: none;
+    }
+    .fourth-container {
+        max-width: 400px;
+    }
+    h2.fourth-container-box-1-heading {
+        font-size: 40px;
+    }
+    .main-box-3-img {
+        margin: 0 30px;
+    }
+    .main-box-container-2-service {
+        text-align: left;
+    }
+    img.box-continer-2-service-logo {
+        padding-top: 34px;
+        padding-left: 32px;
+    }
+    .image-box-continer-2-service-logo {
+        margin-left: 0;
+    }
+    .container-why-work-with-me {
+        max-width: 100%;
+    }
+    .box-2-why-work-with-me {
+        padding: 0 30px;
+    }
+    .main-box-1-testimonial {
+        width: 90%;
+    }
+    .main-container-blog {
+        width: 90%;
+    }
+    .main-container-blog-heading-paragraph {
+        width: 90%;
+    }
+    a.blog-box-1-image-content-heading {
+        font-size: 25px;
+    }
+    .main-container-company-logo {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .design-element-img-1 {
+        display: none;
+    }
+    .design-element-img-2 {
+        display: none;
+    }
+    .design-element-img-3 {
+        display: none;
+    }
+    .design-element-img-4 {
+        display: none;
+    }
+    .design-element-img-5 {
+        display: none;
+    }
+    .seventh-container-design-element-1 {
+        display: none;
+    }
+    .seventh-container-design-element-2 {
+        display: none;
+    }
+    img.ninth-contianer-desing-element-2 {
+        display: none;
+    }
+    img.ninth-contianer-desing-element-1 {
+        display: none;
+    }
+    .ninth-contianer-desing-element-1 {
+        display: none;
+    }
+    .ninth-contianer-desing-element-2 {
+        display: none;
+    }
+    img.design-element-contect-1 {
+        display: none;
+    }
+    img.design-element-contect-2 {
+        display: none;
+    }
+    .main-container-contect {
+        max-width: 90%;
+    }
+    .footer-content {
+        width: 60%;
+    }
+    .footer-content {
+        width: 80%;
+    }
+}

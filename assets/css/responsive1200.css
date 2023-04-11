@@ -1,0 +1,149 @@
+@media only screen and (max-width: 1200px) {
+    .header-navbar {
+        display: none;
+    }
+    .main-header {
+        max-width: 960px;
+    }
+    .hamburger-toggle {
+        display: block;
+    }
+    .hamburger-toggle i {
+        color: #ffffffb3;
+        border: 1px solid #9a9797bf;
+        padding: 10px 11px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .responsive-navbar ul li {
+        padding: 12px 0;
+        border-bottom: 1px solid #e7e7e7;
+        padding-left: 21px;
+    }
+    .responsive-navbar {
+        max-width: 90%;
+        margin: 0 auto;
+        background: white;
+    }
+    .responsive-navbar ul {
+        list-style: none;
+    }
+    .responsive-navbar ul li {
+        padding: 12px 0;
+        border-bottom: 1px solid #e7e7e7;
+        padding-left: 21px;
+    }
+    .responsive-navbar ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    .first-container {
+        height: 100%;
+    }
+    .image-banner-banner {
+        display: block;
+    }
+    ul.image-banner-box-2-facts-ul li:first-child {
+        left: 0px;
+    }
+    .image-banner-box-2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .image-banner-box-1 {
+        width: 100%;
+        text-align: center;
+    }
+    .image-banner-box-1-button-social-icon {
+        justify-content: center;
+    }
+    .main-image-banner {
+        padding: 100px 0;
+    }
+    h1.image-banner-box-1-heading {
+        font-size: 62px;
+    }
+    .box-welcome-to-my-world-a {
+        width: 50%;
+    }
+    /* third container */
+    .main-container-about-me {
+        display: block;
+    }
+    .main-container-about-me-box-1 {
+        margin-bottom: 144px;
+    }
+    img.about-me-box-1-image-2 {
+        left: 409px;
+        bottom: -95px;
+    }
+    .main-container-about-me-box-2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container-about-me-box-1:before {
+        left: 553px;
+        top: 101px;
+    }
+    .container-about-me-box-1:after {
+        left: 277px;
+        bottom: -56px;
+    }
+    /* fourth container  */
+    .fourth-container {
+        display: block;
+        max-width: 960px;
+    }
+    .fourth-container-box-1 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .fourth-container-box-2 {
+        width: 100%;
+    }
+    .fifth-contaier-portfolio {
+        max-width: 960px;
+    }
+    .container-1-service {
+        width: 80%;
+    }
+    .main-box-container-2-service {
+        width: 50%;
+    }
+    .main-container-service {
+        max-width: 960px;
+    }
+    .container-why-work-with-me {
+        max-width: 960px;
+        display: block;
+    }
+    .main-box-1-why-work-with-me {
+        width: 100%;
+    }
+    .main-box-1-why-work-with-me-image {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    img.box-1-why-work-with-me-image {
+        width: 60%;
+    }
+    .main-box-2-why-work-with-me {
+        width: 100%;
+    }
+    .box-2-why-work-with-me {
+        padding-left: 0px;
+    }
+    .main-container-blog {
+        max-width: 960px;
+    }
+    .main-container-company-logo {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .main-container-contect {
+        max-width: 960px;
+    }
+    .footer {
+        max-width: 960px;
+    }
+}

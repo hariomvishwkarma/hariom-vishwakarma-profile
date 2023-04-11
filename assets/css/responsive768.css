@@ -1,0 +1,127 @@
+@media only screen and (max-width: 768px) {
+    /* desingn element display none */
+    img.design-element-second-container-1 {
+        display: none;
+    }
+    img.design-element-third-container-1 {
+        display: none;
+    }
+    img.design-element-third-container-2 {
+        display: none;
+    }
+    img.fifth-coontainer-design-element-1 {
+        display: none;
+    }
+    img.fifth-coontainer-design-element-2 {
+        display: none;
+    }
+    .main-header {
+        max-width: 720px;
+    }
+    .image-banner-box-2-img img {
+        width: 100%;
+    }
+    .main-image-banner {
+        padding: 150px 0;
+    }
+    ul.image-banner-box-2-facts-ul li:first-child {
+        left: -82px;
+    }
+    h1.image-banner-box-1-heading {
+        font-size: 58px;
+    }
+    .box-welcome-to-my-world-a {
+        width: 100%;
+    }
+    .image-banner-box-2-img:after {
+        display: none;
+    }
+    .main-container-about-me-box-1 {
+        width: 85%;
+        margin-bottom: 110px !important;
+        margin: 0 auto;
+    }
+    .main-container-about-me-box-2 {
+        width: 67%;
+    }
+    img.about-me-box-1-image-2 {
+        left: 335px;
+    }
+    .main-about-me-box-2 {
+        display: block;
+    }
+    .fourth-container {
+        max-width: 550px;
+    }
+    .box-3-images-1 {
+        width: 100%;
+    }
+    .box-3-images-2 {
+        width: 100%;
+    }
+    .box-3-images-3 {
+        width: 100%;
+    }
+    .box-3-images-4 {
+        width: 100%;
+    }
+    .box-3-images-5 {
+        width: 100%;
+    }
+    .box-3-images-6 {
+        width: 100%;
+    }
+    .fifth-contaier-portfolio {
+        max-width: 540px;
+    }
+    .main-container-service {
+        max-width: 540px;
+    }
+    .container-1-service {
+        width: 90%;
+    }
+    .container-why-work-with-me {
+        max-width: 540px;
+        display: block;
+    }
+    img.box-1-why-work-with-me-image {
+        width: 80%;
+    }
+    .main-box-1-testimonial {
+        width: 70%;
+    }
+    .main-container-blog {
+        max-width: 540px;
+    }
+    .blog-box-2 {
+        width: 90%;
+    }
+    .main-container-blog-heading-paragraph {
+        width: 70%;
+    }
+    .main-container-company-logo {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    .main-container-contect {
+        max-width: 540px;
+    }
+    form.box-3-contect-box-2-main-form {
+        display: block;
+    }
+    .box-3-contect-box-2-form-main-input {
+        width: 100%;
+    }
+    .footer {
+        max-width: 540px;
+    }
+    .footer-copyright-policy {
+        display: block;
+    }
+    .footer-copyright {
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        width: 70%;
+    }
+}

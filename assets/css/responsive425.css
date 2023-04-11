@@ -1,0 +1,62 @@
+@media only screen and (max-width: 425px) {
+    .header-logo-img {
+        width: 66%;
+    }
+    .main-header {
+        padding: 20px;
+    }
+    h1.image-banner-box-1-heading {
+        font-size: 37px;
+        padding: 0 35px;
+    }
+    h1.image-banner-box-1-heading small {
+        font-size: 18px;
+    }
+    .image-banner-box-2-facts-ul {
+        display: none;
+    }
+    p.image-banner-box-1-paragraph {
+        font-size: 18px;
+        padding: 0 43px 35px;
+    }
+    li.image-banner-box-1-social-icon-click a {
+        margin: 0 18px;
+    }
+    a.image-banner-box-1-button {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .image-banner-box-1-button-social-icon {
+        flex-flow: column;
+    }
+    p.main-paragraph-welcome-to-my-world {
+        width: 90%;
+    }
+    .main-container-about-me-box-1 {
+        width: 80%;
+    }
+    img.about-me-box-1-image-1 {
+        width: 100%;
+    }
+    img.about-me-box-1-image-2 {
+        display: none;
+    }
+    .main-container-about-me-box-2 {
+        width: 85%;
+    }
+    h2.main-heading-about-me-box-2 {
+        font-size: 28px;
+    }
+    .fourth-container {
+        max-width: 330px;
+    }
+    h2.fourth-container-box-1-heading {
+        font-size: 26px;
+    }
+    a.blog-box-1-image-content-heading {
+        font-size: 22px;
+    }
+    .footer-content {
+        width: 90%;
+    }
+}

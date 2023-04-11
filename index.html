@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/style.js" type="text/Javascript">
+    <link rel="stylesheet" href="assets/css/responsive1400.css">
+    <link rel="stylesheet" href="assets/css/responsive1200.css">
+    <link rel="stylesheet" href="assets/css/responsive990.css">
+    <link rel="stylesheet" href="assets/css/responsive768.css">
+    <link rel="stylesheet" href="assets/css/responsive575.css">
+    <link rel="stylesheet" href="assets/css/responsive425.css">
+    <link rel="stylesheet" href="assets/css/responsive375.css">
+    <link rel="stylesheet" href="assets/css/responsive320.css">
+
+    <!-- font icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>
+     :root {
+        --animationSpeed: 120s;
+    }
+    /*Animation*/
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-150px * 6))
+        }
+    }
+    /*Styling*/
+    
+    .slider {
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 1200px;
+    }
+    
+    .slide-track {
+        animation: scroll var(--animationSpeed) linear infinite;
+        display: flex;
+        width: calc(160px * 16);
+    }
+    
+    .slide {
+        height: 40rem;
+        width: 210px;
+    }
+    
+    .textimonial-warapper {
+        background-color: #fff0;
+        position: relative;
+        border-radius: 5px;
+        margin: 5px 10px;
+    }
+    
+    .top-section {
+        background-color: #fff;
+        height: 80px;
+        text-align: center;
+        padding: 10px;
+        text-transform: capitalize;
+        /*border-radius: 5px 5px 0px 0px;*/
+    }
+    
+    .bottom-section {
+        margin-top: 5px;
+        background-color: #fff;
+        text-align: center;
+        padding: 56px 10px;
+        /*border-radius: 0px 0px 5px 5px;*/
+    }
+    
+    .image-setion {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin-left: -51px;
+    }
+    
+    .image-setion img {
+        position: absolute;
+        height: 92px;
+        border: 5px solid #0c2712;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+    }
+    
+    .review-text {
+        padding: 15px 10px;
+        background-color: #e5e5e5;
+        font-size: 14px;
+        margin-top: 15px;
+        border-radius: 5px;
+        border: 1px solid #c1c1c1;
+    }
+    
+    .review-text p {
+        font-size: 13px;
+        color: #2a2a2a;
+    }
+    
+    .review-text h5 {
+        font-size: 20px;
+        text-transform: capitalize;
+        color: #2a2a2a;
+        margin-bottom: 5px;
+    }
+    
+    .review-star ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .review-star ul li {
+        list-style: none;
+        padding: 0px 5px;
+    }
+    
+    .review-star ul li img {
+        width: 15px;
+    }
+    
+    .review-text {
+        position: relative;
+    }
+    
+    .quots-icon-01 {
+        position: absolute;
+        top: 20px;
+        width: 8px;
+        transform: rotate(180deg);
+        right: 45px;
+    }
+    
+    .quots-icon-02 {
+        position: absolute;
+        top: 20px;
+        width: 8px;
+        left: 47px;
+    }
+</style>
+
+<body>
+    <!-- <a id="button"></a> -->
+    <div class="loaderMain">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header>
+        <div class="main-header">
+            <div class="header-logo">
+                <p>Free<span>lancer</span></p>
+            </div>
+            <div class="header-navbar">
+                <ul class="header-navbar-ul">
+                    <li class="header-navbar-ul-li">
+                        <a href="#home-container" class="header-navbar-ul-li-a home-active" id="home">Home</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#about-container" class="header-navbar-ul-li-a" id="about">About</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#portfolio-container" class="header-navbar-ul-li-a" id="portfolio">Portfolio</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#service-container" class="header-navbar-ul-li-a" id="service">service</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#testimonial-container" class="header-navbar-ul-li-a" id="testimonial">Testimonials</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#blog-container" class="header-navbar-ul-li-a" id="blog">Blog</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#contect-container" class="header-navbar-ul-li-a" id="contect">Contect</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="responsive-navbar">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main-container" id="home-container">
+            <div class="main-first-contianer">
+                <section class="first-container">
+                    <div class="main-image-banner">
+                        <div class="image-banner-banner">
+                            <div class="image-banner-box-2">
+                                <div class="image-banner-box-2-img" id="tilt">
+                                    <ul class="image-banner-box-2-facts-ul">
+                                        <li>
+                                            <p>100<span>+</span></p>
+                                            <h4>TOTAL <br>PROJECT</h4>
+                                        </li>
+                                        <li>
+                                            <p>10<span>+</span></p>
+                                            <h4>WORLDWIDE<br>CLIENT</h4>
+                                        </li>
+                                    </ul>
+                                    <img class="image-banner-box-2-image" src='assets/image/hero_main_image.png' alt="">
+                                </div>
+                            </div>
+                            <div class="image-banner-box-1">
+                                <h1 class="image-banner-box-1-heading"><small>Hello, I'm</small><br> James <strong>Anderson</strong></h1>
+                                <p class="image-banner-box-1-paragraph">A passionate <strong>Web Developer</strong> from <strong>New York!</strong></p>
+                                <div class="image-banner-box-1-button-social-icon">
+                                    <a class="image-banner-box-1-button" href="#">Contact Me</a>
+                                    <ul class="image-banner-box-1-social-icon">
+                                        <li class="image-banner-box-1-social-icon-click"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="image-banner-box-1-social-icon-click"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="image-banner-box-1-social-icon-click"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        <li class="image-banner-box-1-social-icon-click"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="design-element">
+                            <img src='assets/image/hero-element-1.png' alt="" class="design-element-img-1">
+                            <img src='assets/image/hero-element-2.png' alt="" class="design-element-img-2">
+                            <img src='assets/image/hero-element-3.png' alt="" class="design-element-img-3">
+                            <img src='assets/image/hero-element-4.png' alt="" class="design-element-img-4">
+                            <img src='assets/image/hero-element-5.png' alt="" class="design-element-img-5">
+                        </div>
+                    </div>
+                </section>
+                <section class="second-container" id="about-container" style="position: relative;" id="about-us">
+                    <img class="design-element-second-container-1" src="assets/image/intro-element-1.png" alt="">
+                    <div class="welcome-to-my-world">
+                        <h2 class="main-heading-welcome-to-my-world">WELCOME TO MY WORLD </h2>
+                        <p class="main-paragraph-welcome-to-my-world">I'm a young, driven tech enthusiast and entrepreneur in India, passionate about innovation and taking calculated risks. I'm eager to make a meaningful impact in the rapidly evolving tech scene here, by leveraging my skills and
+                            knowledge to drive positive change and push the boundaries of what's possible..</p>
+                        <div class="main-box-welcome-to-my-world">
+                            <div class="box-welcome-to-my-world-a" data-aos="fade-up">
+                                <div class="box-welcome-to-my-world">
+                                    <img class="box-welcome-to-my-world-image-1" src='assets/image/download.svg' alt="">
+                                    <h3 class="box-welcome-to-my-world-heading">Creativity</h3>
+                                    <p class="box-welcome-to-my-world-paragraph">Creating intuitive and visually appealing interfaces for software, websites, and mobile applications.</p>
+                                </div>
+                            </div>
+                            <div class="box-welcome-to-my-world-a" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" data-aos-once='true'>
+                                <div class="box-welcome-to-my-world">
+                                    <img class="box-welcome-to-my-world-image-2" src='assets/image/download (1).svg' alt="">
+                                    <h3 class="box-welcome-to-my-world-heading">Dedication</h3>
+                                    <p class="box-welcome-to-my-world-paragraph">Designing, developing, and maintaining software applications to meet business needs and improve efficiency.</p>
+                                </div>
+                            </div>
+                            <div class="box-welcome-to-my-world-a" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200" data-aos-once='true'>
+                                <div class="box-welcome-to-my-world">
+                                    <img class="box-welcome-to-my-world-image-3" src='assets/image/123.svg' alt="">
+                                    <h3 class="box-welcome-to-my-world-heading">Hard Work</h3>
+                                    <p class="box-welcome-to-my-world-paragraph"> Writing code, debugging, and testing software requires a lot of hard work and attention to detail.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="third-container" id="portfolio-container" data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000" data-aos-once='true'>
+                    <img class="design-element-third-container-1" src="assets/image/about-element-1.png" alt="">
+                    <img class="design-element-third-container-2" src="assets/image/about-element-2.png">
+                    <div class="main-container-about-me">
+                        <div class="main-container-about-me-box-1">
+                            <div class="container-about-me-box-1">
+                                <img src='assets/image/about-image-1.png' alt="" class="about-me-box-1-image-1">
+                                <img src='assets/image/about-image-2.png' alt="" class="about-me-box-1-image-2">
+                            </div>
+                        </div>
+                        <div class="main-container-about-me-box-2">
+                            <h2 class="main-heading-about-me-box-2"><span>ABOUT ME</span>Senior Frontend Developer from India</h2>
+                            <p class="main-paragraph-about-me-box-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Tabore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <!-- <p class="main-paragraph-about-me-box-2">Tabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+                            <div class="main-about-me-box-2">
+                                <div class="about-me-detail-box-2">
+                                    <ul class="ul-about-me-detail-box-2">
+                                        <li class="ul-li-about-me-detail-box-2">
+                                            <h4 class="ul-li-h4">NAME</h4>
+                                            <p class="ul-li-p">Hariom Vishwakarma</p>
+                                        </li>
+                                        <li class="ul-li-about-me-detail-box-2">
+                                            <h4 class="ul-li-h4">EMAIL</h4>
+                                            <p class="ul-li-p">hariomvish267@gmail.com</p>
+                                        </li>
+                                        <li class="ul-li-about-me-detail-box-2">
+                                            <h4 class="ul-li-h4">PHONE</h4>
+                                            <p class="ul-li-p">7879386266</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="about-me-detail-box-2">
+                                    <ul class="ul-about-me-detail-box-2">
+                                        <li class="ul-li-about-me-detail-box-2">
+                                            <h4 class="ul-li-h4">AGE</h4>
+                                            <p class="ul-li-p">24 Years</p>
+                                        </li>
+                                        <li class="ul-li-about-me-detail-box-2">
+                                            <h4 class="ul-li-h4">EDUCATION</h4>
+                                            <p class="ul-li-p">Bachelor of Technology</p>
+                                        </li>
+                                        <li class="ul-li-about-me-detail-box-2">
+                                            <h4 class="ul-li-h4">FREELANCE</h4>
+                                            <p class="ul-li-p">Available</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="button-about-me-detail-box-2">DOWNLOAD CV</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section class="section-fourth-container" id="service-container">
+                    <div class="fourth-container">
+                        <div class="fourth-container-box-1" data-aos="fade-down" data-aos-duration="2000" data-aos-once='true'>
+                            <h2 class="fourth-container-box-1-heading"><span>MY SKILLS</span>I'm great in what I do and I'm loving it</h2>
+                            <p class="fourth-container-box-1-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="fourth-container-box-2">
+                            <div class="forth-container-box-2-main-progress-bar">
+                                <h4>Competitive Programming</h4>
+                                <p>84%</p>
+                                <div class="progress">
+                                    <div class="progress-value"></div>
+                                </div>
+                            </div>
+                            <div class="forth-container-box-2-main-progress-bar">
+                                <h4>Competitive Programming</h4>
+                                <p>84%</p>
+                                <div class="progress">
+                                    <div class="progress-value"></div>
+                                </div>
+                            </div>
+                            <div class="forth-container-box-2-main-progress-bar">
+                                <h4>Competitive Programming</h4>
+                                <p>84%</p>
+                                <div class="progress">
+                                    <div class="progress-value"></div>
+                                </div>
+                            </div>
+                            <div class="forth-container-box-2-main-progress-bar">
+                                <h4>Competitive Programming</h4>
+                                <p>84%</p>
+                                <div class="progress">
+                                    <div class="progress-value"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                <!-- <section class="fifth-container" style="position: relative;">
+                    <img src="assets/image/portfolio-element-1.png" alt="" class="fifth-coontainer-design-element-1">
+                    <img src="assets/image/portfolio-element-2.png" alt="" class="fifth-coontainer-design-element-2">
+                    <div class="fifth-contaier-portfolio">
+                        <div class="fifth-container-portfolio-box-1">
+                            <h2 class="fifth-container-portfolio-heading">PORTFOLIO</h2>
+                            <P class="fifth-container-portfolio-peragraph">Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non proident, sunt in culim id est.</P>
+                        </div>
+                        <div class="fifth-container-portfolio-box-2">
+                            <button class="active-fifth-container fifth-container-button-1">All</button>
+                            <button class="fifth-container-button-2">Programming</button>
+                            <button class="fifth-container-button-3">Development</button>
+                            <button class="fifth-container-button-4">Design</button>
+                            <button class="fifth-container-button-5">Application</button>
+                        </div>
+                        <div class="fifth-container-portfolio-box-3" data-aos="fade-up" data-aos-duration="3000" data-aos-once='true'>
+                            <div class="fifth-container-portfolio-box-3-images">
+                                <div class="box-3-images-1">
+                                    <div class="main-box-3-img">
+                                        <img src="assets/image/portfolio-item-01.jpg" alt="" class="portfolio-box-3-img">
+                                        <div class="portfolio-box-3-contant">
+                                            <span class="portfolio-box-3-img-span">PROGRAMMING</span>
+                                            <h3 class="portfolio-box-3-img-heading">Website Design For Rainy Design</h3>
+                                        </div>
+                                        <div class="portfolio-box-3-icon">
+                                            <a href="" class="portfolio-box-3-icon-link" style="text-decoration: none;">
+                                                <i class="fa-light fa-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-3-images-2">
+                                    <div class="main-box-3-img">
+                                        <img src="assets/image/portfolio-item-02.jpg" alt="" class="portfolio-box-3-img">
+                                        <div class="portfolio-box-3-contant">
+                                            <span class="portfolio-box-3-img-span">PROGRAMMING</span>
+                                            <h3 class="portfolio-box-3-img-heading">Website Design For Rainy Design</h3>
+                                        </div>
+                                        <div class="portfolio-box-3-icon">
+                                            <a href="" class="portfolio-box-3-icon-link" style="text-decoration: none;">
+                                                <i class="fa-light fa-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-3-images-3">
+                                    <div class="main-box-3-img">
+                                        <img src="assets/image/portfolio-item-03.jpg" alt="" class="portfolio-box-3-img">
+                                        <div class="portfolio-box-3-contant">
+                                            <span class="portfolio-box-3-img-span">PROGRAMMING</span>
+                                            <h3 class="portfolio-box-3-img-heading">Website Design For Rainy Design</h3>
+                                        </div>
+                                        <div class="portfolio-box-3-icon">
+                                            <a href="" class="portfolio-box-3-icon-link" style="text-decoration: none;">
+                                                <i class="fa-light fa-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-3-images-4">
+                                    <div class="main-box-3-img">
+                                        <img src="assets/image/portfolio-item-04.jpg" alt="" class="portfolio-box-3-img">
+                                        <div class="portfolio-box-3-contant">
+                                            <span class="portfolio-box-3-img-span">PROGRAMMING</span>
+                                            <h3 class="portfolio-box-3-img-heading">Website Design For Rainy Design</h3>
+                                        </div>
+                                        <div class="portfolio-box-3-icon">
+                                            <a href="" class="portfolio-box-3-icon-link" style="text-decoration: none;">
+                                                <i class="fa-light fa-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-3-images-5">
+                                    <div class="main-box-3-img">
+                                        <img src="assets/image/portfolio-item-05.jpg" alt="" class="portfolio-box-3-img">
+                                        <div class="portfolio-box-3-contant">
+                                            <span class="portfolio-box-3-img-span">PROGRAMMING</span>
+                                            <h3 class="portfolio-box-3-img-heading">Website Design For Rainy Design</h3>
+                                        </div>
+                                        <div class="portfolio-box-3-icon">
+                                            <a href="" class="portfolio-box-3-icon-link" style="text-decoration: none;">
+                                                <i class="fa-light fa-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-3-images-6">
+                                    <div class="main-box-3-img">
+                                        <img src="assets/image/portfolio-item-06.jpg" alt="" class="portfolio-box-3-img">
+                                        <div class="portfolio-box-3-contant">
+                                            <span class="portfolio-box-3-img-span">PROGRAMMING</span>
+                                            <h3 class="portfolio-box-3-img-heading">Website Design For Rainy Design</h3>
+                                        </div>
+                                        <div class="portfolio-box-3-icon">
+                                            <a href="" class="portfolio-box-3-icon-link" style="text-decoration: none;">
+                                                <i class="fa-light fa-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                <section class="sixth-container" style="position: relative;">
+                    <img src="assets/image/service-element-3.png" alt="" class="seventh-container-design-element-1">
+
+                    <div class="main-container-service">
+                        <div class="container-1-service">
+                            <h2 class="container-1-service-heading">SERVICE</h2>
+                            <p class="container-1-service-peragraph">Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non proident, sunt in culim id est.
+                            </p>
+                        </div>
+                        <div class="container-2-service">
+                            <div class="container-2-service-boxes">
+                                <div class="main-box-container-2-service" data-aos="fade-up" data-aos-once='true'>
+                                    <div class="box-contoiner-2-service">
+                                        <div class="image-box-continer-2-service-logo"><img src='assets/image/download (98).png' alt="" class="box-continer-2-service-logo"></div>
+                                        <h2 class="box-continer-2-service-heading">Desktop Apps</h2>
+                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                    </div>
+                                </div>
+                                <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="200" data-aos-once='true'>
+                                    <div class="box-contoiner-2-service">
+                                        <div class="image-box-continer-2-service-logo"><img src='assets/image/download (99).png' alt="" class="box-continer-2-service-logo"></div>
+                                        <h2 class="box-continer-2-service-heading">Mobile Apps</h2>
+                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                    </div>
+                                </div>
+                                <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="400" data-aos-once='true'>
+                                    <div class="box-contoiner-2-service">
+                                        <div class="image-box-continer-2-service-logo"><img src='assets/image/download (97).png' alt="" class="box-continer-2-service-logo"></div>
+                                        <h2 class="box-continer-2-service-heading">Web Development</h2>
+                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                    </div>
+                                </div>
+                                <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="600" data-aos-once='true'>
+                                    <div class="box-contoiner-2-service">
+                                        <div class="image-box-continer-2-service-logo"><img src='assets/image/download (100).png' alt="" class="box-continer-2-service-logo"></div>
+                                        <h2 class="box-continer-2-service-heading">Security System</h2>
+                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                    </div>
+                                </div>
+                                <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="800" data-aos-once='true'>
+                                    <div class="box-contoiner-2-service">
+                                        <div class="image-box-continer-2-service-logo"><img src='assets/image/download - 2022-12-12T151458.401.png' alt="" class="box-continer-2-service-logo"></div>
+                                        <h2 class="box-continer-2-service-heading">Custom Algorithm</h2>
+                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                    </div>
+                                </div>
+                                <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="1000" data-aos-once='true'>
+                                    <div class="box-contoiner-2-service">
+                                        <div class="image-box-continer-2-service-logo"><img src='assets/image/download - 2022-12-12T151545.705.png' alt="" class="box-continer-2-service-logo"></div>
+                                        <h2 class="box-continer-2-service-heading">Web Consulting</h2>
+                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="seventh-container">
+                    <div class="container-why-work-with-me">
+                        <div class="main-box-1-why-work-with-me" data-aos="fade-right" data-aos-duration="1500" data-aos-once='true'>
+                            <div class="main-box-1-why-work-with-me-image">
+                                <img class="box-1-why-work-with-me-image" src="assets/image/feature-photo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="main-box-2-why-work-with-me" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400" data-aos-once='true'>
+                            <div class="box-2-why-work-with-me">
+                                <h2 class="box-2-why-work-with-me-heading"><span>WHY WORK WITH ME</span>Best result with top user experience</h2>
+                                <p class="box-2-why-work-with-me-peragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eureh lit anim id est laborum</p>
+                                <div class="box-2-content-why-work-with-me">
+                                    <div class="box-2-content-1-why-work-with-me">
+                                        <img src='assets/image/umbrella.png' alt="" class="box-2-content-1-why-work-with-me-image-icon">
+                                    </div>
+                                    <div class="box-2-content-2-why-work-with-me">
+                                        <h2 class="heading-content-1-why-work-with-me">Lifetime Support</h2>
+                                        <p class="paragraph-content-1-why-work-with-me">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="box-2-content-why-work-with-me">
+                                    <div class="box-2-content-1-why-work-with-me">
+                                        <img src='assets/image/box.png' alt="" class="box-2-content-1-why-work-with-me-image-icon">
+                                    </div>
+                                    <div class="box-2-content-2-why-work-with-me">
+                                        <h2 class="heading-content-1-why-work-with-me">Lifetime Support</h2>
+                                        <p class="paragraph-content-1-why-work-with-me">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="box-2-content-why-work-with-me">
+                                    <div class="box-2-content-1-why-work-with-me">
+                                        <img src='assets/image/refresh.png' alt="" class="box-2-content-1-why-work-with-me-image-icon">
+                                    </div>
+                                    <div class="box-2-content-2-why-work-with-me">
+                                        <h2 class="heading-content-1-why-work-with-me">Lifetime Support</h2>
+                                        <p class="paragraph-content-1-why-work-with-me">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="eighth-container-testimonial" id="testimonial-container">
+                    <div class="main-container-testimonial">
+                        <div class="container-testimonial">
+                            <div class="main-box-1-testimonial">
+                                <h2 class="box-1-heading-testimonial">TESTIMONIAL</h2>
+                                <p class="box-1-paragraph-testimonial">Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non proident, sunt in culim id est.</p>
+                            </div>
+                            <div class="main-slider-box-2-testimonial">
+                                <div class="slider-box-2-testoimoial" id="testimonial-slider">
+                                    <div class="box-2-testimonial">
+                                        <div class="box-2-testimonial-item">
+                                            <div class="box-2-testimonial-quate-main-img"><img class="box-2-testmonial-quate-img" src="assets/image/quote-icon.png" alt=""></div>
+                                            <p class="box-2-testimonial-paragraph">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir cm id est laborum.</p>
+                                            <div class="box-2-testimonial-contant">
+                                                <div class="box-2-testimonial-content-1">
+                                                    <img src="assets/image/testimonial-author-1.jpg" alt="" class="box-2-testimonial-content-1-img">
+                                                </div>
+                                                <div class="box-2-testimonial-content-2">
+                                                    <h2 class="box-2-testimonial-content-2-heading">Mark Anthony</h2>
+                                                    <p class="box-2-testimonial-content-2-paragraph">Web Developer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-2-testimonial">
+                                        <div class="box-2-testimonial-item">
+                                            <div class="box-2-testimonial-quate-main-img"><img class="box-2-testmonial-quate-img" src="assets/image/quote-icon.png" alt=""></div>
+                                            <p class="box-2-testimonial-paragraph">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir cm id est laborum.</p>
+                                            <div class="box-2-testimonial-contant">
+                                                <div class="box-2-testimonial-content-1">
+                                                    <img src="assets/image/testimonial-author-2.jpg" alt="" class="box-2-testimonial-content-1-img">
+                                                </div>
+                                                <div class="box-2-testimonial-content-2">
+                                                    <h2 class="box-2-testimonial-content-2-heading">Dona Josefine</h2>
+                                                    <p class="box-2-testimonial-content-2-paragraph">Web Developer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-2-testimonial">
+                                        <div class="box-2-testimonial-item">
+                                            <div class="box-2-testimonial-quate-main-img"><img class="box-2-testmonial-quate-img" src="assets/image/quote-icon.png" alt=""></div>
+                                            <p class="box-2-testimonial-paragraph">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir cm id est laborum.</p>
+                                            <div class="box-2-testimonial-contant">
+                                                <div class="box-2-testimonial-content-1">
+                                                    <img src="assets/image/testimonial-author-3.jpg" alt="" class="box-2-testimonial-content-1-img">
+                                                </div>
+                                                <div class="box-2-testimonial-content-2">
+                                                    <h2 class="box-2-testimonial-content-2-heading">james anderson</h2>
+                                                    <p class="box-2-testimonial-content-2-paragraph">Web Developer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-2-testimonial">
+                                        <div class="box-2-testimonial-item">
+                                            <div class="box-2-testimonial-quate-main-img"><img class="box-2-testmonial-quate-img" src="assets/image/quote-icon.png" alt=""></div>
+                                            <p class="box-2-testimonial-paragraph">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir cm id est laborum.</p>
+                                            <div class="box-2-testimonial-contant">
+                                                <div class="box-2-testimonial-content-1">
+                                                    <img src="assets/image/testimonial-author-4.jpg" alt="" class="box-2-testimonial-content-1-img">
+                                                </div>
+                                                <div class="box-2-testimonial-content-2">
+                                                    <h2 class="box-2-testimonial-content-2-heading">james anderson</h2>
+                                                    <p class="box-2-testimonial-content-2-paragraph">Web Developer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section class="ninth-container-blog" style="position: relative;" id="blog-container">
+                    <img src="assets/image/blog-element-1.png" alt="" class="ninth-contianer-desing-element-1">
+                    <img src="assets/image/blog-element-2.png" alt="" class="ninth-contianer-desing-element-2">
+                    <div class="main-container-blog">
+                        <div class="main-container-blog-heading-paragraph">
+                            <h2 class="main-container-blog-heading">FROM MY BLOG</h2>
+                            <p class="main-container-blog-paragraph">Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non proident, sunt in culim id est.</p>
+                        </div>
+                        <div class="main-blog-box">
+                            <div class="main-blog-box-1" data-aos="fade-right" data-aos-duration="1200" data-aos-once='true'>
+                                <div class="blog-box-1">
+                                    <img src="assets/image/post-thumbnail-01.jpg" alt="" class="blog-box-1-img">
+                                    <div class="blog-box-1-image-contant">
+                                        <p class="blog-box-1-image-content-date "><i class="fa-regular fa-clock "></i>November 22, 2022</p>
+                                        <a href="" class="blog-box-1-image-content-small-heading"><i class=" fa-regular fa-folder-closed " style="padding-right: 7px; "></i>Web Design</a>
+                                        <h3><a href="# " class="blog-box-1-image-content-heading ">Javascript algorythm and data structure for beginners</a></h3>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-blog-box-2">
+                                <div class="blog-box-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" data-aos-once='true'>
+                                    <div class="blog-box-2-image-contant">
+                                        <div class="blog-box-2-image-hover">
+                                            <img class="blog-box-2-image" src="assets/image/post-thumbnail-03.jpg" alt="">
+                                        </div>
+                                        <div class="blog-box-2-content">
+                                            <a href="" class="blog-box-2-content-small-heading"><i class=" fa-regular fa-folder-closed " style="padding-right: 7px; "></i>Web Design</a>
+                                            <h3><a href="# " class="blog-box-2-content-heading ">Design a wesite using Figma easily </a></h3>
+                                            <p class="blog-box-2-content-date "><i class="fa-regular fa-clock "></i>November 22, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-box-2 " data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600" data-aos-once='true'>
+                                    <div class="blog-box-2-image-contant ">
+                                        <div class="blog-box-2-image-hover ">
+                                            <img class="blog-box-2-image " src="assets/image/post-thumbnail-03.jpg " alt=" ">
+                                        </div>
+                                        <div class="blog-box-2-content ">
+                                            <a href=" " class="blog-box-2-content-small-heading"><i class="fa-regular fa-folder-closed " style="padding-right: 7px; "></i>Web Design</a>
+                                            <h3><a href="#" class="blog-box-2-content-heading">Design a wesite using Figma easily </a></h3>
+                                            <p class="blog-box-2-content-date"><i class="fa-regular fa-clock"></i>November 22, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-box-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800" data-aos-once='true'>
+                                    <div class="blog-box-2-image-contant">
+                                        <div class="blog-box-2-image-hover">
+                                            <img class="blog-box-2-image" src="assets/image/post-thumbnail-03.jpg" alt="">
+                                        </div>
+                                        <div class="blog-box-2-content">
+                                            <a href="" class="blog-box-2-content-small-heading"><i class=" fa-regular fa-folder-closed " style="padding-right: 7px; "></i>Web Design</a>
+                                            <h3><a href="# " class="blog-box-2-content-heading ">Design a wesite using Figma easily </a></h3>
+                                            <p class="blog-box-2-content-date "><i class="fa-regular fa-clock "></i>November 22, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-box-2 " data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000" data-aos-once='true'>
+                                    <div class="blog-box-2-image-contant ">
+                                        <div class="blog-box-2-image-hover ">
+                                            <img class="blog-box-2-image " src="assets/image/post-thumbnail-03.jpg " alt=" ">
+                                        </div>
+                                        <div class="blog-box-2-content ">
+                                            <a href=" " class="blog-box-2-content-small-heading"><i class="fa-regular fa-folder-closed " style="padding-right: 7px; "></i>Web Design</a>
+                                            <h3><a href="# " class="blog-box-2-content-heading ">Design a wesite using Figma easily </a></h3>
+                                            <p class="blog-box-2-content-date "><i class="fa-regular fa-clock "></i>November 22, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                <section class="tenth-container-company-logo">
+                    <div class="main-container-company-logo slider">
+                        <div class="main-container-company-logo-image slide-track">
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_1.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_2.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"> <img src="assets/image/partner_logo_3.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_4.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_5.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_6.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_7.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_1.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_2.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_3.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_4.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_5.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_6.png" class="container-company-logo-image"></div>
+                            <div class="main-container-company-logo-img"><img src="assets/image/partner_logo_7.png" class="container-company-logo-image"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="eleventh-container-contect" id="contect-container" style="position: relative;">
+                    <img src="assets/image/contact-element-1.png" alt="" class="design-element-contect-1">
+                    <img src="assets/image/contact-element-2.png" alt="" class="design-element-contect-2">
+                    <div class="main-container-contect">
+                        <div class="main-box-1-contect">
+                            <div class="box-1-contect">
+                                <h2 class="box-1-contect-heading">GET IN TOUCH</h2>
+                                <p class="box-1-contect-paragraph">Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non proident, sunt in culim id est.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main-box-2-contect">
+                            <div class="box-2-contect" data-aos="fade-down" data-aos-duration="1000" data-aos-once='true'>
+                                <div class="box-2-contect-icon">
+                                    <i class="fa fa-location-dot"></i>
+                                </div>
+                                <div class="box-2-contect-icon-detail">
+                                    <h4 class="box-2-contect-icon-detail-heading">Address</h4>
+                                    <p class="box-2-contect-icon-detail-paragraph">Indore India</p>
+                                </div>
+                            </div>
+                            <div class="box-2-contect" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-aos-once='true'>
+                                <div class="box-2-contect-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="box-2-contect-icon-detail">
+                                    <h4 class="box-2-contect-icon-detail-heading">Phone</h4>
+                                    <a href="#" class="box-2-contect-icon-detail-paragraph">+91 78793-86266</a>
+                                </div>
+                            </div>
+                            <div class="box-2-contect" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400" data-aos-once='true'>
+                                <div class="box-2-contect-icon">
+                                    <i class="fa-regular fa-envelope"></i> </div>
+                                <div class="box-2-contect-icon-detail">
+                                    <h4 class="box-2-contect-icon-detail-heading">Email</h4>
+                                    <a href="#" class="box-2-contect-icon-detail-paragraph">hariomvish267.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box-3-contect">
+                            <div class="box-3-contect">
+                                <div class="main-box-3-contect-box-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" data-aos-once='true'>
+                                    <div class="box-3-contect-box-1">
+                                        <div class="responsive-map">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.49482911793!2d75.69903566398878!3d22.72388828811878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1680678329994!5m2!1sen!2sus"
+                                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-box-3-contect-box-2" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1100" data-aos-once='true'>
+                                    <div class="box-3-contect-box-2">
+                                        <h2 class="box-3-contect-box-2-heading">Write me a message</h2>
+                                        <form id="contact-form" action="" class="box-3-contect-box-2-main-form">
+                                            <div class="box-3-contect-box-2-form-main-input">
+                                                <input type="text" placeholder="Name*" name="name" class="contect-box-2-form-input" required>
+                                            </div>
+                                            <div class="box-3-contect-box-2-form-main-input">
+                                                <input type="text" placeholder="Email*" name="email" class="contect-box-2-form-input" required>
+                                            </div>
+                                            <div class="box-3-contect-box-2-form-main-textarea">
+                                                <textarea class="contect-box-2-form-textarea" name="message" placeholder="Your massage here*" required></textarea>
+                                            </div>
+                                            <button name="submit" class="contect-box-2-form-button">SEND MASSAGE</button>
+                                            <p id="thank-you-msg" class="form-tq-hidden">Thank you for your message!</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-footer">
+                    <div class="footer">
+                        <div class="footer-back-to-top">
+                            <a href="#header" class="back-to-top">
+                                <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                            <a href="#" class="footer-logo">
+                                <img src="assets/image/fungi_logo.png" alt="" class="footer-logo-img">
+                            </a>
+                            <p class="footer-paragraph">Kilaboris nisi ut aliquip ex ea commodo consequat uis aute cupidatat non proident sunt in culd est laborum.</p>
+                            <div class="main-footer-social-media-icon">
+                                <ul class="footer-social-media-icon">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-copyright-policy">
+                            <div class="footer-copyright">
+                                <p class="footer-copyright-paragraph">All rights reserved &copy; 2022 <strong>eThemeStudio</strong></p>
+                            </div>
+                            <div class="footer-policy">
+                                <a href="#" class="footer-terms-and-condition">Terms And Condition</a>
+                                <a href="#" class="footer-terms-and-condition">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="assets/style.js "></script>
+</body>
+
+</html>
