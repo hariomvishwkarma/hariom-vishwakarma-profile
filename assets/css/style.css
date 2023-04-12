@@ -55,6 +55,12 @@
     visibility: visible;
 }
 
+header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
 
 /* preloader */
 
@@ -188,13 +194,6 @@ a.header-navbar-ul-li-a:hover {
 
 /* image banner  */
 
-.main-first-contianer {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
 .main-image-banner {
     max-width: 1100px;
     margin: 0 auto;
@@ -232,7 +231,7 @@ h1.image-banner-box-1-heading small {
 }
 
 h1.image-banner-box-1-heading {
-    font-size: 90px;
+    font-size: 70px;
     line-height: 1.2;
     font-family: 'Poppins', sans-serif;
     color: #fff;
@@ -320,7 +319,7 @@ img.design-element-img-1 {
 
 .image-banner-box-2-img {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 img.design-element-img-2 {
@@ -479,7 +478,7 @@ p.main-paragraph-welcome-to-my-world {
     margin: 0 auto;
     font-family: sans-serif;
     font-size: 22px;
-    color: #948daa;
+    color: rgb(82, 81, 81);
     margin-bottom: 72px;
 }
 
@@ -638,17 +637,17 @@ img.design-element-third-container-2 {
 }
 
 .main-container-about-me-box-1 {
-    width: 50%;
+    width: 45%;
 }
 
 .main-container-about-me-box-2 {
-    width: 45%;
+    width: 55%;
 }
 
 h2.main-heading-about-me-box-2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 48px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 14px;
     display: flex;
     flex-flow: column;
     line-height: 1.3;
@@ -662,9 +661,12 @@ h2.main-heading-about-me-box-2 span {
 p.main-paragraph-about-me-box-2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    color: #615978;
+    color: #000;
     margin-bottom: 16px;
     line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 h4.ul-li-h4 {
@@ -1113,7 +1115,7 @@ h2.box-continer-2-service-heading {
     color: #fff;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     transition: 0.5s;
 }
 
@@ -1671,12 +1673,14 @@ form#contact-form {
 }
 
 form#contact-form input:first-child {
-    margin-right: 10px;
+    padding: 0 00 0 10px;
 }
 
 form#contact-form textarea {
-    width: 100%;
+    width: 99%;
     height: 240px;
+    padding-left: 11px;
+    padding-top: 11px;
 }
 
 .main-container-contect {
@@ -1855,8 +1859,13 @@ input.contect-box-2-form-input {
     margin-bottom: 30px;
 }
 
+.box-3-contect-box-2-form-main-input:first-child {
+    padding-right: 27px;
+}
+
 .box-3-contect-box-2-form-main-input {
-    width: 50%;
+    width: 47%;
+    padding-bottom: 10px;
 }
 
 input:focus-visible {
