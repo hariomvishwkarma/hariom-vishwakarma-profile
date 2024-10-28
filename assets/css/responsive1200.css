@@ -21,9 +21,13 @@
         padding-left: 21px;
     }
     .responsive-navbar {
-        max-width: 90%;
+        width: 53%;
         margin: 0 auto;
         background: white;
+        position: absolute;
+        right: 17px;
+        top: 71px;
+        border-radius: 6%;
     }
     .responsive-navbar ul {
         list-style: none;

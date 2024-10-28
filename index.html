@@ -29,6 +29,40 @@
     <!-- aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+footer.main-footer {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+}   
+.footer-contact {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.footer-links {
+    width: fit-content;
+}
+footer.main-footer ul {
+    list-style: none;
+}
+footer.main-footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer-cta {
+    width: fit-content;
+}
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+} 
+</style>    
+    
 </head>
 <style>
      :root {
@@ -159,6 +193,9 @@
         width: 8px;
         left: 47px;
     }
+    html {
+  scroll-behavior: smooth;
+}
 </style>
 
 <body>
@@ -188,6 +225,34 @@
                         <a href="#portfolio-container" class="header-navbar-ul-li-a" id="portfolio">Portfolio</a>
                     </li>
                     <li class="header-navbar-ul-li">
+                        <a href="#service-section" class="header-navbar-ul-li-a" id="service">service</a>
+                    </li>
+                    <!-- <li class="header-navbar-ul-li">
+                        <a href="#testimonial-container" class="header-navbar-ul-li-a" id="testimonial">Testimonials</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#blog-container" class="header-navbar-ul-li-a" id="blog">Blog</a>
+                    </li> -->
+                    <li class="header-navbar-ul-li">
+                        <a href="#contect-container" class="header-navbar-ul-li-a" id="contect">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="responsive-navbar">
+                <ul>
+                    <li class="header-navbar-ul-li">
+                        <a href="#home-container" class="header-navbar-ul-li-a home-active" id="home">Home</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#about-container" class="header-navbar-ul-li-a" id="about">About</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
+                        <a href="#portfolio-container" class="header-navbar-ul-li-a" id="portfolio">Portfolio</a>
+                    </li>
+                    <li class="header-navbar-ul-li">
                         <a href="#service-container" class="header-navbar-ul-li-a" id="service">service</a>
                     </li>
                     <li class="header-navbar-ul-li">
@@ -201,23 +266,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="hamburger-toggle">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
         </div>
     </header>
     <main>
-        <div class="responsive-navbar">
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+        
         <div class="main-container" id="home-container">
             <div class="main-contianer-all">
                 <section class="first-container">
@@ -227,7 +279,7 @@
                                 <div class="image-banner-box-2-img" id="tilt">
                                     <ul class="image-banner-box-2-facts-ul">
                                         <li>
-                                            <p>100<span>+</span></p>
+                                            <p>200<span>+</span></p>
                                             <h4>TOTAL <br>PROJECT</h4>
                                         </li>
                                         <li>
@@ -240,13 +292,11 @@
                             </div>
                             <div class="image-banner-box-1">
                                 <h1 class="image-banner-box-1-heading"><small>Hello, I'm</small><br> Hariom <strong>Vishwakarma</strong></h1>
-                                <p class="image-banner-box-1-paragraph">A passionate <strong>Web Developer</strong> from <strong>India!</strong></p>
+                                <p class="image-banner-box-1-paragraph">A passionate <strong>Shopify Developer & Web Designer</strong> from <strong>India!</strong></p>
                                 <div class="image-banner-box-1-button-social-icon">
                                     <a class="image-banner-box-1-button" href="#contect-container">Contact Me</a>
                                     <ul class="image-banner-box-1-social-icon">
-                                        <li class="image-banner-box-1-social-icon-click"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="image-banner-box-1-social-icon-click"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="image-banner-box-1-social-icon-click"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        <li class="image-banner-box-1-social-icon-click"><a target="_blank" href="https://www.linkedin.com/in/hariom-vishwakarma-714571176"><i class="fab fa-linkedin"></i></a></li>
                                         <li class="image-banner-box-1-social-icon-click"><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
@@ -265,28 +315,27 @@
                     <img class="design-element-second-container-1" src="assets/image/intro-element-1.png" alt="">
                     <div class="welcome-to-my-world">
                         <h2 class="main-heading-welcome-to-my-world">WELCOME TO MY WORLD </h2>
-                        <p class="main-paragraph-welcome-to-my-world">I'm a young, driven tech enthusiast and entrepreneur in India, passionate about innovation and taking calculated risks. I'm eager to make a meaningful impact in the rapidly evolving tech scene here, by leveraging my skills and
-                            knowledge to drive positive change and push the boundaries of what's possible..</p>
+                        <p class="main-paragraph-welcome-to-my-world">"Explore my journey as a Shopify Developer and Web Designer! Dive into a world where creativity meets functionality, and discover projects crafted with precision and passion. Let's build something extraordinary together!"</p>
                         <div class="main-box-welcome-to-my-world">
                             <div class="box-welcome-to-my-world-a" data-aos="fade-up">
                                 <div class="box-welcome-to-my-world">
                                     <img class="box-welcome-to-my-world-image-1" src='assets/image/download.svg' alt="">
                                     <h3 class="box-welcome-to-my-world-heading">Creativity</h3>
-                                    <p class="box-welcome-to-my-world-paragraph">Creating intuitive and visually appealing interfaces for software, websites, and mobile applications.</p>
+                                    <p class="box-welcome-to-my-world-paragraph">Where creativity meets code—transforming ideas into visually stunning, functional web experiences. Welcome to a space where innovation shapes every click and pixel!</p>
                                 </div>
                             </div>
                             <div class="box-welcome-to-my-world-a" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" data-aos-once='true'>
                                 <div class="box-welcome-to-my-world">
                                     <img class="box-welcome-to-my-world-image-2" src='assets/image/download (1).svg' alt="">
                                     <h3 class="box-welcome-to-my-world-heading">Dedication</h3>
-                                    <p class="box-welcome-to-my-world-paragraph">Designing, developing, and maintaining software applications to meet business needs and improve efficiency.</p>
+                                    <p class="box-welcome-to-my-world-paragraph">Fueled by dedication—delivering seamless, high-quality solutions through meticulous attention to every detail. Here, commitment turns ideas into reality!</p>
                                 </div>
                             </div>
                             <div class="box-welcome-to-my-world-a" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200" data-aos-once='true'>
                                 <div class="box-welcome-to-my-world">
                                     <img class="box-welcome-to-my-world-image-3" src='assets/image/123.svg' alt="">
                                     <h3 class="box-welcome-to-my-world-heading">Hard Work</h3>
-                                    <p class="box-welcome-to-my-world-paragraph"> Writing code, debugging, and testing software requires a lot of hard work and attention to detail.</p>
+                                    <p class="box-welcome-to-my-world-paragraph">Driven by hard work—bringing visions to life with persistence and precision. Every project is a step toward excellence!</p>
                                 </div>
                             </div>
                         </div>
@@ -303,13 +352,14 @@
                             </div>
                         </div>
                         <div class="main-container-about-me-box-2">
-                            <h2 class="main-heading-about-me-box-2"><span>ABOUT ME</span>Senior Frontend Developer from India</h2>
-                            <p class="main-paragraph-about-me-box-2"><span>I am <strong>Hariom Vishwakarma</strong>, a <strong>Web Designer And Front-End Developer</strong> with 1 Years Of Experience from Indore, India.I have extensive experience in <strong>Web Designing, WordPress Front-End
-                                Development, ShopifyDevelopment, Customization</strong>, as well as UI/UX Designing.</span>
-                                <span> I have effectively managed roles and responsibilities as a <strong>Shopify Developer And Wordpress Front-End Developer.</strong></span>
-                                <span> leveraging my </strong>1 Years Of Experience In Resolving Any Issues.</strong> I am committed to continuous learning and improvement, and I am always looking for new challenges and opportunities to expand my skill
-                                set. I am passionate about web design and front-end development, and I am dedicated to delivering exceptional results that exceed my clients' expectations.<br> Please click on the <strong>"Download CV"</strong> button.</span>                                Thanks!
-                            </p>
+                            <h2 class="main-heading-about-me-box-2"><span>ABOUT ME</span>Senior Shopify Developer from India</h2>
+<p class="main-paragraph-about-me-box-2">
+    <span>I am <strong>Hariom Vishwakarma</strong>, a <strong>Web Designer and Shopify Developer</strong> with <strong>2.5 years of experience</strong> from Indore, India. I have extensive experience in <strong>Web Designing, Shopify Development, Customization</strong>, as well as UI/UX Designing.</span>
+    <span>I have effectively managed roles and responsibilities as a <strong>Shopify Developer</strong>, leveraging my <strong>2.5 years of experience in resolving various issues</strong>.</span>
+    <span>I am committed to continuous learning and improvement, and I am always looking for new challenges and opportunities to expand my skill set. I am passionate about web design and front-end development, and I am dedicated to delivering exceptional results that exceed my clients' expectations.<br>Please click on the <strong>"Download CV"</strong> button.</span>
+    Thanks!
+</p>
+
                             <div class="main-about-me-box-2">
                                 <div class="about-me-detail-box-2">
                                     <ul class="ul-about-me-detail-box-2">
@@ -328,7 +378,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="assets/resume-sample.pdf" download="resume-sample.pdf" class="button-about-me-detail-box-2">DOWNLOAD CV</a>
+                            <a href="assets/CV Hariom Web& ShopifyDeveloper-1.pdf" download="CV Hariom Web& ShopifyDeveloper-1.pdf" class="button-about-me-detail-box-2">DOWNLOAD CV</a>
                         </div>
                     </div>
                 </section>
@@ -475,13 +525,13 @@
                         </div>
                     </div>
                 </section> -->
-                <section class="sixth-container" style="position: relative;">
+                <section class="sixth-container" id="service-section" style="position: relative;">
                     <img src="assets/image/service-element-3.png" alt="" class="seventh-container-design-element-1">
 
                     <div class="main-container-service">
                         <div class="container-1-service">
                             <h2 class="container-1-service-heading">SERVICE</h2>
-                            <p class="container-1-service-peragraph">Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non proident, sunt in culim id est.
+                            <p class="container-1-service-peragraph">With a focus on innovation and quality, I offer a range of services tailored to meet your business needs. From Shopify development and customization to web design and ongoing support, I am dedicated to helping you achieve your goals and deliver an exceptional online experience.
                             </p>
                         </div>
                         <div class="container-2-service">
@@ -489,45 +539,45 @@
                                 <div class="main-box-container-2-service" data-aos="fade-up" data-aos-once='true'>
                                     <div class="box-contoiner-2-service">
                                         <div class="image-box-continer-2-service-logo"><img src='assets/image/download (98).png' alt="" class="box-continer-2-service-logo"></div>
-                                        <h2 class="box-continer-2-service-heading">Web Design</h2>
-                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                        <h2 class="box-continer-2-service-heading"> Shopify Development</h2>
+                                        <P class="box-continer-2-service-paragraph">Custom Shopify theme development tailored to your brand. Shopify store setup and configuration. Migration of existing stores to Shopify.                                        </P>
                                     </div>
                                 </div>
                                 <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="200" data-aos-once='true'>
                                     <div class="box-contoiner-2-service">
                                         <div class="image-box-continer-2-service-logo"><img src='assets/image/download (99).png' alt="" class="box-continer-2-service-logo"></div>
-                                        <h2 class="box-continer-2-service-heading">Ecommerce websites</h2>
-                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                        <h2 class="box-continer-2-service-heading">Web Design</h2>
+                                        <P class="box-continer-2-service-paragraph">Responsive and visually appealing web designs. UI/UX design focusing on user-friendly interfaces. Custom graphics and branding solutions.</P>
                                     </div>
                                 </div>
                                 <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="400" data-aos-once='true'>
                                     <div class="box-contoiner-2-service">
                                         <div class="image-box-continer-2-service-logo"><img src='assets/image/download (97).png' alt="" class="box-continer-2-service-logo"></div>
-                                        <h2 class="box-continer-2-service-heading">Web Development</h2>
-                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                        <h2 class="box-continer-2-service-heading">Shopify Customization</h2>
+                                        <P class="box-continer-2-service-paragraph">Theme customization to match your brand identity. Integration of third-party apps and payment gateways. Performance optimization for faster load times.</P>
                                     </div>
                                 </div>
-                                <!-- <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="600" data-aos-once='true'>
+                                <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="600" data-aos-once='true'>
                                     <div class="box-contoiner-2-service">
                                         <div class="image-box-continer-2-service-logo"><img src='assets/image/download (100).png' alt="" class="box-continer-2-service-logo"></div>
-                                        <h2 class="box-continer-2-service-heading">Security System</h2>
-                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                        <h2 class="box-continer-2-service-heading">E-commerce Solutions</h2>
+                                        <P class="box-continer-2-service-paragraph">Complete e-commerce setup for startups and businesses. Inventory management and product listing optimization. Sales analytics and reporting setup.</P>
                                     </div>
                                 </div>
                                 <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="800" data-aos-once='true'>
                                     <div class="box-contoiner-2-service">
                                         <div class="image-box-continer-2-service-logo"><img src='assets/image/download - 2022-12-12T151458.401.png' alt="" class="box-continer-2-service-logo"></div>
-                                        <h2 class="box-continer-2-service-heading">Custom Algorithm</h2>
-                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                        <h2 class="box-continer-2-service-heading">Ongoing Support and Maintenance</h2>
+                                        <P class="box-continer-2-service-paragraph">Regular updates and maintenance for Shopify stores. Troubleshooting and resolving technical issues. Consultation and training sessions for store management.</P>
                                     </div>
                                 </div>
                                 <div class="main-box-container-2-service" data-aos="fade-up" data-aos-delay="1000" data-aos-once='true'>
                                     <div class="box-contoiner-2-service">
                                         <div class="image-box-continer-2-service-logo"><img src='assets/image/download - 2022-12-12T151545.705.png' alt="" class="box-continer-2-service-logo"></div>
-                                        <h2 class="box-continer-2-service-heading">Web Consulting</h2>
-                                        <P class="box-continer-2-service-paragraph">Yeprehe nderit in voluptate velit esse prehen pteur sint occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa rum.</P>
+                                        <h2 class="box-continer-2-service-heading">SEO Optimization</h2>
+                                        <P class="box-continer-2-service-paragraph">On-page SEO strategies to improve search engine rankings. Keyword research and implementation for better visibility. Performance tracking and reporting to monitor results.</P>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -541,15 +591,15 @@
                         </div>
                         <div class="main-box-2-why-work-with-me" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400" data-aos-once='true'>
                             <div class="box-2-why-work-with-me">
-                                <h2 class="box-2-why-work-with-me-heading"><span>WHY WORK WITH ME</span>Best result with top user experience</h2>
-                                <p class="box-2-why-work-with-me-peragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eureh lit anim id est laborum</p>
+                                <h2 class="box-2-why-work-with-me-heading">WHY WORK WITH ME</h2>
+                                <p class="box-2-why-work-with-me-peragraph">Choosing to work with me means partnering with a passionate professional committed to delivering exceptional results. Let's create something extraordinary together!                                </p>
                                 <div class="box-2-content-why-work-with-me">
                                     <div class="box-2-content-1-why-work-with-me">
                                         <img src='assets/image/umbrella.png' alt="" class="box-2-content-1-why-work-with-me-image-icon">
                                     </div>
                                     <div class="box-2-content-2-why-work-with-me">
-                                        <h2 class="heading-content-1-why-work-with-me">Lifetime Support</h2>
-                                        <p class="paragraph-content-1-why-work-with-me">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia mollit anim id est laborum.</p>
+                                        <h2 class="heading-content-1-why-work-with-me">Expertise and Experience</h2>
+                                        <p class="paragraph-content-1-why-work-with-me">With over 2.5 years of hands-on experience in Shopify development and web design, I bring a wealth of knowledge to every project, ensuring high-quality results tailored to your needs.</p>
                                     </div>
                                 </div>
                                 <div class="box-2-content-why-work-with-me">
@@ -557,8 +607,8 @@
                                         <img src='assets/image/box.png' alt="" class="box-2-content-1-why-work-with-me-image-icon">
                                     </div>
                                     <div class="box-2-content-2-why-work-with-me">
-                                        <h2 class="heading-content-1-why-work-with-me">Lifetime Support</h2>
-                                        <p class="paragraph-content-1-why-work-with-me">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia mollit anim id est laborum.</p>
+                                        <h2 class="heading-content-1-why-work-with-me">Client-Centric Approach</h2>
+                                        <p class="paragraph-content-1-why-work-with-me">I prioritize understanding your unique requirements and objectives, enabling me to deliver solutions that align perfectly with your vision.</p>
                                     </div>
                                 </div>
                                 <div class="box-2-content-why-work-with-me">
@@ -566,15 +616,15 @@
                                         <img src='assets/image/refresh.png' alt="" class="box-2-content-1-why-work-with-me-image-icon">
                                     </div>
                                     <div class="box-2-content-2-why-work-with-me">
-                                        <h2 class="heading-content-1-why-work-with-me">Lifetime Support</h2>
-                                        <p class="paragraph-content-1-why-work-with-me">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia mollit anim id est laborum.</p>
+                                        <h2 class="heading-content-1-why-work-with-me">Creative Solutions</h2>
+                                        <p class="paragraph-content-1-why-work-with-me">I combine creativity with technical skills to create visually appealing and functional websites that enhance user experience and drive engagement.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="eighth-container-testimonial" id="testimonial-container">
+                <!-- <section class="eighth-container-testimonial" id="testimonial-container">
                     <div class="main-container-testimonial">
                         <div class="container-testimonial">
                             <div class="main-box-1-testimonial">
@@ -647,7 +697,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- <section class="ninth-container-blog" style="position: relative;" id="blog-container">
                     <img src="assets/image/blog-element-1.png" alt="" class="ninth-contianer-desing-element-1">
                     <img src="assets/image/blog-element-2.png" alt="" class="ninth-contianer-desing-element-2">
@@ -817,36 +867,31 @@
         </div>
     </main>
     <footer class="main-footer">
-        <div class="footer">
-            <div class="footer-back-to-top">
-                <a href="#header" class="back-to-top">
-                    <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
-                </a>
+        <div class="footer-contact">
+            <h4>Contact Me</h4>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Phone: +91 12345 67890</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+                <a href="https://twitter.com/yourprofile">Twitter</a>
             </div>
-            <div class="footer-content">
-                <a href="#" class="footer-logo">
-                    <img src="assets/image/fungi_logo.png" alt="" class="footer-logo-img">
-                </a>
-                <p class="footer-paragraph">Kilaboris nisi ut aliquip ex ea commodo consequat uis aute cupidatat non proident sunt in culd est laborum.</p>
-                <div class="main-footer-social-media-icon">
-                    <ul class="footer-social-media-icon">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-copyright-policy">
-                <div class="footer-copyright">
-                    <p class="footer-copyright-paragraph">All rights reserved &copy; 2022 <strong>eThemeStudio</strong></p>
-                </div>
-                <div class="footer-policy">
-                    <a href="#" class="footer-terms-and-condition">Terms And Condition</a>
-                    <a href="#" class="footer-terms-and-condition">Privacy Policy</a>
-                </div>
-            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-cta">
+            <h4>Get in Touch</h4>
+            <a href="#contact" class="cta-button">Request a Quote</a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Hariom Vishwakarma. All rights reserved.</p>
         </div>
     </footer>
     <script src="assets/style.js "></script>
